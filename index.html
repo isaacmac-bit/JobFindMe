@@ -3,7 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Primary SEO -->
   <title>FindMeJob — Global Remote Career Consulting</title>
+  <meta name="title" content="FindMeJob — Global Remote Career Consulting">
+  <meta name="description" content="We help tech, operations, and business professionals optimize their application pipeline, bypass ATS filters, and secure high-paying USD remote offers.">
+  <meta name="keywords" content="Remote Jobs, ATS Optimization, LinkedIn SEO, USD Salary, Career Coaching, Job Application Pipeline">
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://isaacmac-bit.github.io/FindMeJob/">
+  <meta property="og:title" content="FindMeJob — Land USD-Salaried Remote Roles">
+  <meta property="og:description" content="Optimize your pipeline, bypass ATS filters, and secure high-paying international remote offers.">
+  <meta property="og:image" content="https://isaacmac-bit.github.io/FindMeJob/og-preview.png">
+
+  <!-- Tailwind CSS & Google Fonts -->
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,6 +36,7 @@
       <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-600">
         <a href="#hero" class="hover:text-blue-600 transition-colors">Home</a>
         <a href="#process" class="hover:text-blue-600 transition-colors">4-Step Process</a>
+        <a href="#results" class="hover:text-blue-600 transition-colors">Results</a>
         <a href="#services" class="hover:text-blue-600 transition-colors">Services</a>
       </nav>
       <div class="hidden sm:flex items-center">
@@ -29,13 +44,14 @@
           Book Strategy Call
         </a>
       </div>
-      <button id="menu-btn" class="md:hidden p-2 text-slate-600 focus:outline-none">
+      <button id="menu-btn" aria-label="Toggle navigation menu" class="md:hidden p-2 text-slate-600 focus:outline-none">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
       </button>
     </div>
     <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-200 px-6 pt-3 pb-6 space-y-3">
       <a href="#hero" class="block text-slate-600 hover:text-blue-600 font-semibold py-1">Home</a>
       <a href="#process" class="block text-slate-600 hover:text-blue-600 font-semibold py-1">4-Step Process</a>
+      <a href="#results" class="block text-slate-600 hover:text-blue-600 font-semibold py-1">Results</a>
       <a href="#services" class="block text-slate-600 hover:text-blue-600 font-semibold py-1">Services</a>
       <a href="#apply" class="block text-center mt-4 w-full py-2.5 rounded-lg font-bold text-sm bg-blue-600 text-white">Book Strategy Call</a>
     </div>
@@ -159,6 +175,43 @@
     </div>
   </section>
 
+  <!-- Results & Proof Section -->
+  <section id="results" class="py-20 bg-slate-100/70 border-t border-slate-200">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <span class="text-xs font-extrabold uppercase tracking-widest text-blue-600 bg-blue-100 px-3 py-1 rounded-full">Proven Impact</span>
+        <h2 class="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight mt-4">Verified Candidate Results</h2>
+        <p class="text-slate-600 mt-2 text-sm">Real conversion outcomes achieved through candidate pipeline optimization.</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
+          <div>
+            <span class="text-xs font-bold text-emerald-700 bg-emerald-100 px-2.5 py-1 rounded-md">CV Optimization Boosts Conversion to 100% ATS Match</span>
+            <p class="text-slate-600 text-sm leading-relaxed mt-4">
+              Targeted resume localization and keyword integration allowed candidates to bypass automated filters and reach hiring manager desks seamlessly.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-100 text-xs font-bold text-slate-400 uppercase tracking-wider">
+            Verified Job Application Form Proof
+          </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
+          <div>
+            <span class="text-xs font-bold text-blue-700 bg-blue-100 px-2.5 py-1 rounded-md">Direct Recruiter Inbound Pipeline</span>
+            <p class="text-slate-600 text-sm leading-relaxed mt-4">
+              Profile restructuring and SEO alignment yielded direct interview invitations from US and EU companies without relying on job board submissions.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-100 text-xs font-bold text-slate-400 uppercase tracking-wider">
+            Verified Invitation to Interview Email Proof
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Services Section -->
   <section id="services" class="py-20 bg-slate-50 border-t border-slate-200">
     <div class="max-w-7xl mx-auto px-6">
@@ -271,14 +324,31 @@
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="py-8 border-t border-slate-200 bg-white text-center text-xs font-medium text-slate-500">
-    <p>© 2026 FindMeJob. All rights reserved.</p>
+  <!-- Complete Standard Footer -->
+  <footer class="py-10 border-t border-slate-200 bg-white">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-medium text-slate-500">
+      <p>© 2026 FindMeJob. All rights reserved.</p>
+      <div class="flex items-center gap-6">
+        <a href="#hero" class="hover:text-blue-600 transition-colors">Privacy Policy</a>
+        <a href="#hero" class="hover:text-blue-600 transition-colors">Terms of Service</a>
+        <a href="mailto:support@findmejob.com" class="hover:text-blue-600 transition-colors">Contact Support</a>
+      </div>
+    </div>
   </footer>
 
   <script>
-    document.getElementById('menu-btn').addEventListener('click', () => {
-      document.getElementById('mobile-menu').classList.toggle('hidden');
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Close mobile menu when clicking menu links
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+      });
     });
   </script>
 </body>
